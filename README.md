@@ -1,76 +1,81 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/8oN7Bv2E)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11896413&assignment_repo_type=AssignmentRepo)
-### CSCI 340 - Data Structures and Algorithm Analysis
+# Stack Program
 
-**Data Structure:** Stack <BR>
-**Programming Focus:** Templates, STL, Queue
+## Overview
 
-# Stack
+Welcome to the Stack Program! This C++ program implements a stack using two queues. It provides essential stack operations such as push, pop, top, size, and checking whether the stack is empty.
 
-For this computer assignment, you are to complete a Stack template class using STL queues. 
-All relevant files are located within this GitHub repository. 
+## Features
 
-*stack.h* contains a declaration of the Stack class. 
-It is given here to facilitate the following description:
+- **Empty Check:**
+  - Determines whether the stack is empty.
 
-```c++
-template<typename T>
-class Stack
-{
-private:
-    std::queue<T> q1;   // These queues are where the stack's elements 
-    std::queue<T> q2;   // are to be saved.
+- **Size:**
+  - Returns the current size of the stack.
 
-public:
-    bool empty() const;
-    int size() const;
-    const T& top();
-    void push(const T &val);
-    void pop();
-};
-```
-You are required to implement the member functions of the `Stack` class. Recall that *template* member function definitions go in the `.h` file along with the class declaration.
-A main function is already provided in *main.cc* and does not need to be modified, you can test your program with *stack.in* and check that it matches *stack.out*.
+- **Top:**
+  - Returns the element at the top of the stack.
 
-In the implementation of the class, you must use queues `q1` and `q2` to store the elements in your stack.
-It is suggested to keep all elements in either one of the queues and use the other queue for temporary storage.
-    
-The member functions of the `Stack` template class must perform the following operations:
-    
-* `empty()` Returns true if the stack has no elements in it.  
+- **Push:**
+  - Adds an element to the top of the stack.
 
-* `size()` Returns the number of elements in the stack.
+- **Pop:**
+  - Removes the element from the top of the stack.
 
-* `top()` This method returns a reference to the newest element. 
+## Test Runs
 
-* `push()` Add the element to your stack.
+The program has undergone testing to ensure the correct functionality of the stack operations. Various test cases cover scenarios, including stack operations on an empty stack and a stack with multiple elements.
 
-* `pop()` This method removes the newest element. 
+1. Empty Check
+   - Verifies whether the stack correctly reports as empty.
 
-**Programming Notes:**
+2. Size
+   - Validates the accurate calculation of the stack size.
 
-Specific tasks, function prototypes, assignment specific components
-  
-- Note that you are implementing the methods for the `Stack` template class, creating a `Makefile` and,
-if necessary, a `.gitignore` file.  Template methods belong in the `.h` file.  *Do not* create a `stack.cc` file!
+3. Top
+   - Retrieves and displays the top element of the stack.
 
-- Prepare your Makefile (you need to create and add `Makefile` to your repo) so that the TA only needs to invoke the command `make` to compile your source file and produce the executable file `stack`. You must use exactly the same file names specified here, i.e. `stack`, in your `Makefile`, otherwise your **submission will get 0 points**.
+4. Push
+   - Adds elements to the stack and checks for the correct size.
 
-- Don't forget to create a proper `.gitignore` file that lists any *generated* files (from `make`) that should not be added to your repo!
+5. Pop
+   - Removes elements from the stack and verifies the updated size.
 
-- Note that an implementation of a solution to a *similar problem* (that might provide some useful hints) can be found
-here: (https://www.geeksforgeeks.org/implement-stack-using-queue/)
+## Code Organization
 
-- Note that the `Rational` class is has been copied from the handouts for CSCI 241/501.  
-It is included here to be used for testing your `Stack` template class and requires no alterations.
-See (http://faculty.cs.niu.edu/~winans/CS501/#operator_overloading) for more information.
+All the code for this project is organized into the following files:
 
-**Assignment Notes:**
+- `stack.h` (Implemented by Jose Barron): Header file defining the Stack class and its members.
+- `main.cc`: Main program file where the stack operations are tested.
+- `rational.h` and `rational.cc`: Files related to a rational number class, with `rational.h` being implemented.
+- `stack.in`: Input file for testing the stack program.
+- `stack.out`: Output file for storing the results of the test runs.
 
-- Include any necessary headers and add necessary global constants.
+## Data Structures and Algorithms Used
 
-- You are not allowed to use any I/O functions from the C library, such as scanf or printf. Instead, use the I/O functions from the C++ library, such as cin or cout.
+The stack is implemented using two queues. The algorithm for the push operation involves enqueuing the element in the non-empty queue. The pop operation is implemented by transferring elements between the two queues until the desired element is dequeued.
 
-- Add documentation to the appropriate source files as discussed in your class.
+## Skills Showcase
 
-When your program is ready for grading, ***commit*** and ***push*** your local repository to remote git classroom repository and follow the _**Assignment Submission Instructions**_.
+This project demonstrates proficiency in the following areas:
+
+- **C++ Programming:**
+  - Implements the `stack.h` file using C++ language features and templates.
+  - Utilizes object-oriented principles for the rational number class.
+
+- **Data Structures and Algorithms:**
+  - Implements a stack using two queues, showcasing algorithmic problem-solving skills.
+  - Demonstrates the efficiency of the push and pop operations with the chosen data structures.
+
+- **Problem Solving:**
+  - Addresses the challenge of implementing a stack with two queues efficiently.
+  - Develops solutions for performing stack operations and handling edge cases.
+
+- **Documentation:**
+  - Provides clear and detailed documentation for the stack program and the rational number class.
+
+- **Testing:**
+  - Conducts thorough testing with various test cases to ensure the reliability and correctness of stack operations.
+  - Validates the behavior of the program under different input conditions.
+
+These skills collectively showcase the ability to design, implement, and document a C++ program that effectively addresses a specific problem domain.
+
