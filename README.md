@@ -1,5 +1,8 @@
 # Stack Program
 
+## Data Structure: Stack
+## Programming Focus: Templates, STL, Queue
+
 ## Overview
 
 Welcome to the Stack Program! This C++ program implements a stack using two queues. It provides essential stack operations such as push, pop, top, size, and checking whether the stack is empty.
@@ -25,28 +28,25 @@ Welcome to the Stack Program! This C++ program implements a stack using two queu
 
 The program has undergone testing to ensure the correct functionality of the stack operations. Various test cases cover scenarios, including stack operations on an empty stack and a stack with multiple elements.
 
-1. Empty Check
-   - Verifies whether the stack correctly reports as empty.
+### Test Run 1: Stack<int>
 
-2. Size
-   - Validates the accurate calculation of the stack size.
+- Input: See `stack.in`
+- Output: See `stack.out`
+- **Outcome:** The test run demonstrates operations such as push, pop, and checking the size and top element of the stack. It verifies the proper functioning of the Stack class with integer elements.
 
-3. Top
-   - Retrieves and displays the top element of the stack.
+### Test Run 2: Stack<Rational>
 
-4. Push
-   - Adds elements to the stack and checks for the correct size.
-
-5. Pop
-   - Removes elements from the stack and verifies the updated size.
+- Input: See `stack.in`
+- Output: See `stack.out`
+- **Outcome:** The test run involves stack operations on a stack of rational numbers. It validates the correct handling of arithmetic operations and the proper functioning of the Stack class with user-defined Rational elements.
 
 ## Code Organization
 
 All the code for this project is organized into the following files:
 
 - `stack.h` (Implemented by Jose Barron): Header file defining the Stack class and its members.
-- `main.cc`: Main program file where the stack operations are tested.
-- `rational.h` and `rational.cc`: Files related to a rational number class, with `rational.h` being implemented.
+- `main.cc` (Given by Instructor): Main program file where the stack operations are tested.
+- `rational.h` and `rational.cc` (Given by Instructor): Files related to a rational number class, with `rational.h` being implemented.
 - `stack.in`: Input file for testing the stack program.
 - `stack.out`: Output file for storing the results of the test runs.
 
