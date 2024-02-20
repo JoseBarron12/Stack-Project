@@ -1,7 +1,7 @@
 # Stack Program
 
-## Data Structure: Stack
-## Programming Focus: Templates, STL, Queue
+### Data Structure: Stack
+### Programming Focus: Templates, STL, Queue
 
 ## Overview
 
