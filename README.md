@@ -50,10 +50,6 @@ All the code for this project is organized into the following files:
 - `stack.in`: Input file for testing the stack program.
 - `stack.out`: Output file for storing the results of the test runs.
 
-## Data Structures and Algorithms Used
-
-The stack is implemented using two queues. The algorithm for the push operation involves enqueuing the element in the non-empty queue. The pop operation is implemented by transferring elements between the two queues until the desired element is dequeued.
-
 ## Skills Showcase
 
 This project demonstrates proficiency in the following areas:
