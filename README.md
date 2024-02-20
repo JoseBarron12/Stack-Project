@@ -56,7 +56,6 @@ This project demonstrates proficiency in the following areas:
 
 - **C++ Programming:**
   - Implements the `stack.h` file using C++ language features and templates.
-  - Utilizes object-oriented principles for the rational number class.
 
 - **Data Structures and Algorithms:**
   - Implements a stack using two queues, showcasing algorithmic problem-solving skills.
